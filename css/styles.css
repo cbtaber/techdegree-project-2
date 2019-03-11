@@ -1,3 +1,154 @@
-* { 
-  box-sizing: border-box;
-}
+
+/* ================================= 
+  Base Styles
+  ==================================== */
+  * { 
+  	box-sizing: border-box;
+  }
+
+  body {
+  	font-family: 'Open Sans', sans-serif;
+  	line-height: 1.6;
+  	background: #F9FAFA;
+  }
+
+  .all-content {
+  	text-align: center;
+
+  }
+
+  ul,
+  h2,
+  a,
+  .return {
+  	font-family: 'Josefin Sans', sans-serif;
+  	text-transform: uppercase;
+  	text-decoration: none;
+  	font-weight: bold;
+  	color: #000000;
+  }
+
+  h2 {
+  	font-size: medium;
+  	padding-top: 2em;
+  	padding-bottom: 1em;
+  }
+
+  .name,
+  .footer-name {
+  	font-family: 'Josefin Sans', sans-serif;
+  	font-weight: bold;
+  	color: #000000;
+
+  }
+
+.main-nav a {
+  	
+  	background: #FFFFFF;
+  	width: 90%;
+  	margin: auto ;
+  	margin-bottom: 2%;
+  	padding: 10px;
+  	display: block;
+
+
+  }
+
+  .main-nav a:hover {
+  	background: #675A85;
+  	color: white;
+  }
+
+
+
+  .profile {
+  	padding: 10% 15% 5%;
+
+  }
+
+  img {
+  	width: 100%;
+
+
+  }
+
+  .main-content {
+  	background: #FFFFFF;
+  	padding-bottom: 5%;
+
+  }
+
+  .contactinfo {
+  	color: #737373;
+  	font-weight: bold;
+  }
+
+  p {
+  	width: 85%;
+  	margin: auto;
+  	color: #737373;
+  	padding-bottom: 5%;
+
+  }
+
+  hr {
+  	width: 90%;
+  	color: gray;
+
+  }
+
+  .footer-name {
+  	float: left;
+  	padding-top: 1.5em;
+  	padding-bottom: 1.5em;
+
+  }
+
+  .return {
+  	display: inline-block;
+  	float: right;
+  	padding-top: 1.5em;
+  	padding-bottom: 1.5em;
+
+  }
+
+  .main-footer {
+  	width: 90%;
+  	margin: auto;
+  }
+  /* ================================= 
+  Base Layout Styles
+  ==================================== */
+
+  /* ---- Navigation ---- */
+
+
+
+  /* ---- Layout Containers ---- */
+
+
+
+
+/* ================================= 
+  Media Queries
+  ==================================== */
+
+  @media (min-width: 768px) {
+
+
+
+
+  }
+
+  @media (min-width:1024px) {
+
+
+  }
+
+  /* Float Clearfix ------------------ */
+
+  .group::after {
+  	content: "";
+  	display: table;
+  	clear: both;
+  }
