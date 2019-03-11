@@ -10,57 +10,75 @@
 </head>
 <body>
 	<div class="all-content">
-	<header>
-		<h1 class="name">Christopher Taber</h1>
-		<nav >
-			<ul class="main-nav group">
-				<li><a id="home">Home</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+
+		<div class="upper">
+		<header>
+			<h1 class="name">Christopher Taber</h1>
+			<nav class="group">
+				<ul class="main-nav group">
+					<li><a href="#" id="home">Home</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 
 		</header>
 
-		<img class="profile" src="images/responsive-layout-profile.png" alt="A Stylized Profile Picture">
-		<p>Hi!  I'm a front-end developer who loves responsive design and CSS.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-	
+		<div class="group">
+			<img class="profile" src="images/responsive-layout-profile.png" alt="A Stylized Profile Picture">
+			<p class="profile-text">Hi!  I'm a front-end developer who loves responsive design and CSS.  I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+		</div>
 
-	<main class="main-content">
-		<h2 id="portfolio">Portfolio</h2>
+	</div>
 
-		<img src="images/portfolio-1.png" alt="A graphic representation of a marketing page project">
-		<h3>Marketing Page</h3>
-		<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+		<main class="main-content group">
+			<h2 id="portfolio">Portfolio</h2>
 
-		<img src="images/portfolio-2.png" alt="A graphic representation of a search page project">
-		<h3>Search Page</h3>
-		<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+			<div class="col">
+				<img src="images/portfolio-1.png" alt="A graphic representation of a marketing page project">
+				<h3>Marketing Page</h3>
+				<p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+			</div>
 
-		<img src="images/portfolio-3.png" alt="A graphic representation of a travel app project">
-		<h3>Travel App</h3>
-		<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+			<div class="col">
+				<img src="images/portfolio-2.png" alt="A graphic representation of a search page project">
+				<h3>Search Page</h3>
+				<p>This project searches through a specific database to find information that the user is trying to look up.</p>
+			</div>
 
-		<img src="images/portfolio-4.png" alt="A graphic representation of a map project">
-		<h3>Map of Favorite Spots</h3>
-		<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+			<div class="col">
+				<img src="images/portfolio-3.png" alt="A graphic representation of a travel app project">
+				<h3>Travel App</h3>
+				<p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+			</div>
 
-		<img src="images/portfolio-5.png" alt="A graphic representation of a photo gallery project">
-		<h3>Photo Gallery</h3>
-		<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+			<div class="col">
+				<img src="images/portfolio-4.png" alt="A graphic representation of a map project">
+				<h3>Map of Favorite Spots</h3>
+				<p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+			</div>
 
-		<img src="images/portfolio-6.png" alt="A graphic representation of a calculator project">
-		<h3>Calculator</h3>
-		<p>Someone can enter in the numbers they want and press the big blue button to get the result.</p>
+			<div class="col">
+				<img src="images/portfolio-5.png" alt="A graphic representation of a photo gallery project">
+				<h3>Photo Gallery</h3>
+				<p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+			</div>
 
-	</main>
+			<div class="col">
+				<img src="images/portfolio-6.png" alt="A graphic representation of a calculator project">
+				<h3>Calculator</h3>
+				<p>Someone can enter in the numbers they want and press the big blue button to get the result.</p>
+			</div>
+
+		</main>
 
 
-	<h2 id="contact">Contact</h2>
-	<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-	<p>Phone <span class="contactinfo">+1 (111) 555-1234</span></p>
-	<p>Email <span class="contactinfo">cbtaber@gmail.com</span></p>
-
+		<h2 id="contact">Contact</h2>
+		<p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+		<div class="cont-info">
+			<p>Phone <span class="contactinfo">+1 (111) 555-1234</span></p>
+			<p>Email <span class="contactinfo">cbtaber@gmail.com</span></p>
+		</div>
 	</div>
 
 	<hr>
@@ -69,6 +87,14 @@
 	<footer class="main-footer group">
 		<span class="footer-name">Christopher Taber</span>
 		<span class="return"><a href="#home">Back to Top</a></span>
+		<nav>
+			<ul class="footer-nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
 
 	</footer>
 

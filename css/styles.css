@@ -12,9 +12,18 @@
   	background: #F9FAFA;
   }
 
+  nav {
+  	margin-top: 10px;
+  	margin-bottom: 2px;
+  }
+
   .all-content {
   	text-align: center;
 
+  }
+
+  .name {
+  	margin-bottom: 0%;
   }
 
   ul,
@@ -34,6 +43,9 @@
   	padding-bottom: 1em;
   }
 
+
+
+
   .name,
   .footer-name {
   	font-family: 'Josefin Sans', sans-serif;
@@ -43,15 +55,12 @@
   }
 
 .main-nav a {
-  	
   	background: #FFFFFF;
   	width: 90%;
   	margin: auto ;
   	margin-bottom: 2%;
   	padding: 10px;
   	display: block;
-
-
   }
 
   .main-nav a:hover {
@@ -84,6 +93,8 @@
   }
 
   p {
+
+	font-size: .95em;
   	width: 85%;
   	margin: auto;
   	color: #737373;
@@ -91,9 +102,11 @@
 
   }
 
+
+
   hr {
   	width: 90%;
-  	color: gray;
+  	color: #bfbfbf;
 
   }
 
@@ -105,10 +118,15 @@
   }
 
   .return {
-  	display: inline-block;
+  	
   	float: right;
   	padding-top: 1.5em;
   	padding-bottom: 1.5em;
+
+  }
+
+  .return a:hover {
+  	border-bottom: solid 2px #675A85;
 
   }
 
@@ -116,12 +134,19 @@
   	width: 90%;
   	margin: auto;
   }
+
+  .cont-info {
+  	padding-bottom: 5%;
+
+  }
   /* ================================= 
   Base Layout Styles
   ==================================== */
 
   /* ---- Navigation ---- */
-
+.footer-nav {
+	display: none;
+}
 
 
   /* ---- Layout Containers ---- */
@@ -135,12 +160,133 @@
 
   @media (min-width: 768px) {
 
+  .main-nav { 
+	display: inline-block;
+	padding-top: .5em;
+  	padding-bottom: 1.5em;
+}
 
+.main-nav a {
+	text-align: center;
+	background-color: #F9FAFA;
+	display: inline-block;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+.main-nav a:hover {
+	color: black;
+	background-color: #F9FAFA;
+  	border-bottom: solid 2px #675A85;
+}
+
+.main-nav li {
+	width: 150px;
+	float:left;
+	text-align: center;
+	
+}
+
+
+
+
+.profile {
+	float: right;
+	width: 50%;
+	padding:  0% 5% 5%;
+
+}
+
+.profile-text {
+	float: left;
+	width:50%;
+	text-align: center;
+	padding: 5% 0% 5% 5%;
+	vertical-align: bottom;
+
+}
+
+.main-content {
+	width: 100%;
+
+}
+
+.col {
+	float: left;
+	width: 50%;
+	padding: 1%;
+
+}
+
+.footer-nav { 
+	display: inline-block;
+	float: right;
+	padding-top: 1.5em;
+  	padding-bottom: 1.5em;
+}
+
+.footer-nav li {
+	float: left;
+	margin-left: 1em;
+
+}
+
+  .footer-nav a:hover {
+  	border-bottom: solid 2px #675A85;
+
+  }
+
+.return {
+	display: none;
+}
 
 
   }
 
   @media (min-width:1024px) {
+
+  	.upper {
+	width: 90%;
+	margin: auto;
+
+  	}
+
+.name {
+	float: left;
+	padding: 8px 0px 24px;
+	margin: 0;
+
+}
+
+.main-nav {
+float:right;
+
+}
+
+.main-content {
+width: 95%;
+margin: auto;
+
+}
+
+.col {
+	float: left;
+	width: 33.3%;
+	padding: 1%;
+
+}
+
+.profile {
+
+		padding-right: 0%;
+		margin-top: 10px;
+}
+
+.profile-text {
+	padding-left: 0%;
+
+}
+
 
 
   }
