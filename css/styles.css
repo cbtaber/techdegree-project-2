@@ -12,10 +12,7 @@
   	background: #F9FAFA;
   }
 
-  nav {
-  	margin-top: 10px;
-  	margin-bottom: 2px;
-  }
+
 
   .all-content {
   	text-align: center;
@@ -29,7 +26,8 @@
   ul,
   h2,
   a,
-  .return {
+  .return,
+  .caption  {
   	font-family: 'Josefin Sans', sans-serif;
   	text-transform: uppercase;
   	text-decoration: none;
@@ -43,7 +41,11 @@
   	padding-bottom: 1em;
   }
 
+  .caption {
+    text-transform: capitalize;
+    text-align: center;
 
+  }
 
 
   .name,
@@ -54,19 +56,10 @@
 
   }
 
-.main-nav a {
-  	background: #FFFFFF;
-  	width: 90%;
-  	margin: auto ;
-  	margin-bottom: 2%;
-  	padding: 10px;
-  	display: block;
-  }
+.cont-info p {
+  padding-bottom: 10px;
 
-  .main-nav a:hover {
-  	background: #675A85;
-  	color: white;
-  }
+}
 
 
 
@@ -77,15 +70,36 @@
 
   img {
   	width: 100%;
+  }
 
 
+  #skills,
+  #contact {
+    margin-top: 0;
+  }
+
+
+
+
+  .skill-set {
+    text-align: center;
+    background: white;
+
+  }
+
+
+  .skill-col img {
+    width: 200px;
+    height: 200px;
   }
 
   .main-content {
-  	background: #FFFFFF;
+  	background: #F8F8F8;
   	padding-bottom: 5%;
 
   }
+
+
 
   .contactinfo {
   	color: #737373;
@@ -94,63 +108,88 @@
 
   p {
 
-	font-size: .95em;
-  	width: 85%;
-  	margin: auto;
-  	color: #737373;
-  	padding-bottom: 5%;
+   font-size: 1em;
+   width: 85%;
+   margin: auto;
+   color: #737373;
+   padding-bottom: 5%;
 
-  }
+ }
 
 
 
-  hr {
-  	width: 90%;
-  	color: #bfbfbf;
+ hr {
+   width: 90%;
+   color: #bfbfbf;
 
-  }
+ }
 
-  .footer-name {
-  	float: left;
-  	padding-top: 1.5em;
-  	padding-bottom: 1.5em;
+ .footer-name {
+   float: left;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
 
-  }
+ }
 
-  .return {
-  	
-  	float: right;
-  	padding-top: 1.5em;
-  	padding-bottom: 1.5em;
+ .return {
 
-  }
+   float: right;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
 
-  .return a:hover {
-  	border-bottom: solid 2px #675A85;
+ }
 
-  }
+ .return a:hover {
+   border-bottom: solid 2px #675A85;
 
-  .main-footer {
-  	width: 90%;
-  	margin: auto;
-  }
+ }
 
-  .cont-info {
-  	padding-bottom: 5%;
+ .main-footer {
+   width: 90%;
+   margin: auto;
+ }
 
-  }
+ .cont-info {
+   padding-bottom: 5%;
+
+ }
+
+figure {
+margin: 0;
+padding-bottom: 1em;
+
+}
+
+
   /* ================================= 
   Base Layout Styles
   ==================================== */
 
   /* ---- Navigation ---- */
-.footer-nav {
-	display: none;
-}
+
+  nav {
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+
+  .main-nav a {
+    background: #FFFFFF;
+    width: 90%;
+    margin: auto ;
+    margin-bottom: 2%;
+    padding: 10px;
+    display: block;
+  }
+
+  .main-nav a:hover {
+    background: #675A85;
+    color: white;
+  }
 
 
-  /* ---- Layout Containers ---- */
-
+  .footer-nav {
+   display: none;
+ }
 
 
 
@@ -160,126 +199,164 @@
 
   @media (min-width: 768px) {
 
-  .main-nav { 
-	display: inline-block;
-	padding-top: .5em;
-  	padding-bottom: 1.5em;
+
+
+    .main-nav { 
+     display: inline-block;
+     padding-top: .5em;
+     padding-bottom: 1.5em;
+   }
+
+   .main-nav a {
+     text-align: center;
+     background-color: #F9FAFA;
+     display: inline-block;
+     padding-bottom: 5px;
+     margin-bottom: 0px;
+   }
+
+   .main-nav a:hover {
+     color: black;
+     background-color: #F9FAFA;
+     border-bottom: solid 2px #675A85;
+   }
+
+   .main-nav li {
+     width: 150px;
+     float:left;
+     text-align: center;
+
+   }
+
+
+
+
+   .profile {
+     float: right;
+     width: 50%;
+     padding:  0% 5% 5%;
+
+   }
+
+   .profile-text {
+     float: left;
+     width:50%;
+     text-align: center;
+     padding: 5% 0% 5% 5%;
+     vertical-align: bottom;
+
+   }
+
+   .main-content {
+     width: 100%;
+
+   }
+
+   .skill-wrap {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background: white;
+  }
+
+
+
+
+   .skill-col {
+   float: left;
+   width: 47.5%;
+   /*margin: auto;*/
+
+ }
+ 
+  .col {
+   float: left;
+   width: 50%;
+   padding: 1%;
+
+ }
+
+ .footer-nav { 
+   display: inline-block;
+   float: right;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+ }
+
+ .footer-nav li {
+   float: left;
+   margin-left: 1em;
+
+ }
+
+ .footer-nav a:hover {
+   border-bottom: solid 2px #675A85;
+
+ }
+
+ .return {
+   display: none;
+ }
+
+
 }
 
-.main-nav a {
-	text-align: center;
-	background-color: #F9FAFA;
-	display: inline-block;
-	padding-bottom: 5px;
-	margin-bottom: 0px;
-}
+@media (min-width:1024px) {
 
-.main-nav a:hover {
-	color: black;
-	background-color: #F9FAFA;
-  	border-bottom: solid 2px #675A85;
-}
+  p {
+    font-size: 1.1vw;
 
-.main-nav li {
-	width: 150px;
-	float:left;
-	text-align: center;
-	
-}
+  }
 
+ .upper {
+   width: 90%;
+   margin: auto;
 
+ }
 
+ .name {
+   float: left;
+   padding: 8px 0px 24px;
+   margin: 0;
 
-.profile {
-	float: right;
-	width: 50%;
-	padding:  0% 5% 5%;
+ }
 
-}
-
-.profile-text {
-	float: left;
-	width:50%;
-	text-align: center;
-	padding: 5% 0% 5% 5%;
-	vertical-align: bottom;
+ .main-nav {
+  float:right;
 
 }
 
 .main-content {
-	width: 100%;
+  width: 95%;
+  margin: auto;
+
 
 }
+
+.skill-wrap {
+
+  width: 95%;
+}
+
 
 .col {
+  float: left;
+  width: 33.3%;
+  padding: 1%;
+
+}
+
+.skill-col {
 	float: left;
-	width: 50%;
-	padding: 1%;
-
-}
-
-.footer-nav { 
-	display: inline-block;
-	float: right;
-	padding-top: 1.5em;
-  	padding-bottom: 1.5em;
-}
-
-.footer-nav li {
-	float: left;
-	margin-left: 1em;
-
-}
-
-  .footer-nav a:hover {
-  	border-bottom: solid 2px #675A85;
-
-  }
-
-.return {
-	display: none;
-}
-
-
-  }
-
-  @media (min-width:1024px) {
-
-  	.upper {
-	width: 90%;
-	margin: auto;
-
-  	}
-
-.name {
-	float: left;
-	padding: 8px 0px 24px;
-	margin: 0;
-
-}
-
-.main-nav {
-float:right;
-
-}
-
-.main-content {
-width: 95%;
-margin: auto;
-
-}
-
-.col {
-	float: left;
-	width: 33.3%;
+	width: 18%;
 	padding: 1%;
 
 }
 
 .profile {
 
-		padding-right: 0%;
-		margin-top: 10px;
+  padding-right: 0%;
+  margin-top: 10px;
 }
 
 .profile-text {
@@ -287,14 +364,16 @@ margin: auto;
 
 }
 
+.skill-set {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+}
 
+/* Float Clearfix ------------------ */
 
-  }
-
-  /* Float Clearfix ------------------ */
-
-  .group::after {
-  	content: "";
-  	display: table;
-  	clear: both;
-  }
+.group::after {
+ content: "";
+ display: table;
+ clear: both;
+}
