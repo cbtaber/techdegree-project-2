@@ -264,8 +264,8 @@ padding-bottom: 1em;
 
    .skill-col {
    float: left;
-   width: 47.5%;
-   /*margin: auto;*/
+   width: 50%;
+   
 
  }
  
@@ -368,6 +368,8 @@ padding-bottom: 1em;
   width: 75%;
   text-align: center;
   margin: auto;
+}
+
 }
 
 /* Float Clearfix ------------------ */
